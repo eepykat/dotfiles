@@ -1,5 +1,5 @@
 # modules/mac/default.nix
-{ userConfig, inputs, home, ... }: {
+{ userConfig, inputs, ... }: {
   imports = [
     ./apps
     #./services
