@@ -8,5 +8,6 @@ lib.mkIf config.apps.filemanagment.enable {
 
   homebrew.casks = [
     "localsend"
+    "proton-drive"
   ];
 }

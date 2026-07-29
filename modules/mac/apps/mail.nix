@@ -6,6 +6,7 @@ lib.mkIf config.apps.mail.enable {
   };
 
   homebrew.casks = [
+    "proton-mail"
 
   ];
 }

@@ -7,6 +7,6 @@ lib.mkIf config.apps.security.enable {
   };
 
   homebrew.casks = [
-
+    "proton-pass"
   ];
 }
