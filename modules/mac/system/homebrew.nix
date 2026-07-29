@@ -1,10 +1,5 @@
 # modules/mac/system/homebrew.nix
-{
-  userConfig,
-  inputs,
-  config,
-  ...
-}: {
+{ userConfig, inputs, config, ... }: {
   nix-homebrew = {
     inherit (userConfig) user;
     enable = true;

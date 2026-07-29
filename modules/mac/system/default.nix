@@ -6,5 +6,9 @@
 }: {
   imports = [
     ./homebrew.nix
+    ./home.nix
+    ./preferences.nix
+    inputs.catppuccin.darwinModules.catppuccin
   ];
+
 }
