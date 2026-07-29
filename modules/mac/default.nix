@@ -5,7 +5,6 @@
     #./services
     ./system
     #./tools
-    inputs.${home}.darwinModules.default
   ];
 
   users.users.${userConfig.user} = {
