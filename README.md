@@ -1,3 +1,4 @@
 # dotfiles
+nixOS
 
-meow nixos
+:3
