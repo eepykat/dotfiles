@@ -39,7 +39,11 @@
   mainUser = {
     user = "kat5"; # ${mainUser.user}
     name = "Katarina";
-  }; 
+  };
+  macUser = {
+    user = "catbook"; # ${macUser.user}
+    name = "Katarina";
+  };
   in {
     nixosConfigurations = {
 #    =======================
@@ -102,7 +106,7 @@
       darwinConfigurations = {
         "catbook" = inputs.nix-darwin.lib.darwinSystem {
           system = "aarch64-darwin"; 
-          specialArgs = { inherit inputs mainUser; userConfig = mainUser; };
+          specialArgs = { inherit inputs mainUser; userConfig = macUser; };
           modules = [
             inputs.home-manager.darwinModules.home-manager
             inputs.nix-homebrew.darwinModules.nix-homebrew

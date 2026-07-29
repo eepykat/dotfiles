@@ -9,7 +9,7 @@
 
   users.users.${userConfig.user} = {
     name = userConfig.user;
-    home = "/Users/catbook";
+    home = "/Users/${userConfig.user}";
   };
 
   nixpkgs.hostPlatform = "aarch64-darwin";
