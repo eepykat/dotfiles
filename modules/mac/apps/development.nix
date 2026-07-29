@@ -5,7 +5,7 @@ lib.mkIf config.apps.development.enable {
     "beekeeper-studio"
     "github"
     "nova"
-    "visual-studio-code"
+    #"visual-studio-code"
     "transmit"
 
   ];

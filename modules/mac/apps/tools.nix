@@ -3,6 +3,6 @@
 lib.mkIf config.apps.tools.enable {
   homebrew.casks = [
     "moonlight"
-    "syncthing"
+    "syncthing-app"
   ];
 }
