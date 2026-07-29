@@ -3,7 +3,7 @@
   imports = [
     ./apps
     #./services
-    #./system
+    ./system
     #./tools
     inputs.${home}.darwinModules.default
   ];
