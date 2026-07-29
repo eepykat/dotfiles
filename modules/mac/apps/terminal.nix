@@ -1,5 +1,5 @@
 # modules/mac/apps/terminal.nix
-{ config, lib, ... }: 
+{ config, lib, pkgs, ... }: 
 lib.mkIf config.apps.terminal.enable {
 
   environment.systemPackages = [

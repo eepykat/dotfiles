@@ -1,9 +1,5 @@
 # modules/mac/apps/default.nix
-{
-  config,
-  lib,
-  ...
-}: {
+{ config, lib, ... }: {
   imports = [
     ./audio.nix
     ./books.nix
