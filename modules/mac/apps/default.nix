@@ -20,6 +20,7 @@
     ./video.nix
     ./virtualization.nix
     ./vpn.nix
+    ./games.nix
   ];
 
   options.apps = {
@@ -43,6 +44,7 @@
     video = { enable = lib.mkEnableOption "Video Editing"; };
     virtualization = { enable = lib.mkEnableOption "VM"; };
     vpn = { enable = lib.mkEnableOption "VPN"; };
+    games = { enable = lib.mkEnableOption "Video Games"; };
   };
 
   config.apps = {
@@ -65,5 +67,6 @@
     video.enable = lib.mkDefault config.apps.enable;
     virtualization.enable = lib.mkDefault config.apps.enable;
     vpn.enable = lib.mkDefault config.apps.enable;
+    games.enable = lib.mkDefault config.apps.enable;
   };
 }

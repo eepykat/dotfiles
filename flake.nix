@@ -44,6 +44,10 @@
     user = "catbook"; # ${macUser.user}
     name = "Katarina";
   };
+  macMiniUser = {
+    user = "cat5"; # ${macMiniUser.user}
+    name = "Katarina";
+  };
   in {
     nixosConfigurations = {
 #    =======================
@@ -111,6 +115,20 @@
             inputs.home-manager.darwinModules.home-manager
             inputs.nix-homebrew.darwinModules.nix-homebrew
             ./hosts/catbook
+            {
+              home-manager.useGlobalPkgs = true;
+              home-manager.useUserPackages = true;
+              home-manager.extraSpecialArgs = { inherit inputs mainUser; };
+            }
+          ];
+        };
+        "catmini" = inputs.nix-darwin.lib.darwinSystem {
+          system = "aarch64-darwin"; 
+          specialArgs = { inherit inputs mainUser; userConfig = macMiniUser; };
+          modules = [
+            inputs.home-manager.darwinModules.home-manager
+            inputs.nix-homebrew.darwinModules.nix-homebrew
+            ./hosts/catmini
             {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
