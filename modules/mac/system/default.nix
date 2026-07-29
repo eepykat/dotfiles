@@ -1,9 +1,5 @@
 # modules/mac/system/default.nix
-{
-  config,
-  lib,
-  ...
-}: {
+{ config, lib, inputs, ... }: {
   imports = [
     ./homebrew.nix
     ./home.nix
