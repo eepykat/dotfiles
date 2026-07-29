@@ -7,8 +7,4 @@
     enable = true;
   };
 
-  tools = {
-    enable = true;
-  };
-
 }
