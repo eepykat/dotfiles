@@ -4,7 +4,7 @@
     ./homebrew.nix
     ./home.nix
     ./preferences.nix
+    ./users.nix
     inputs.catppuccin.darwinModules.catppuccin
   ];
-
 }

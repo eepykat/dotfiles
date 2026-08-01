@@ -4,18 +4,7 @@
     ./apps
     #./services
     ./system
-    #./tools
+    ./tools
   ];
-
-  users.users.${userConfig.user} = {
-    name = userConfig.user;
-    home = "/Users/${userConfig.user}";
-  };
-
   nixpkgs.hostPlatform = "aarch64-darwin";
-
-  system = {
-    primaryUser = userConfig.user;
-    stateVersion = 6;
-  };
 }

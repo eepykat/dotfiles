@@ -12,7 +12,8 @@
   time.timeZone = "Europe/Vilnius"; # Lithuanian Time
   i18n.defaultLocale = "en_US.UTF-8";
 
-  podman.enable = true;
+  # Toggles
+  podman.enable = false;
   flatpak.enable = true;
   default-users.enable = true;
   vpn.enable = true;
@@ -22,6 +23,7 @@
   laptop-power.enable = true;
   system.garbage.enable = true;
   cellular.enable = true;
+  steam.enable = false;
 
   home-manager.users.${mainUser.user} = { config, lib, pkgs, inputs, ... }: {
     imports = [
