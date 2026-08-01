@@ -1,5 +1,5 @@
 { config, pkgs, lib, ... }: {
-  environment.systemPackages = with pkgs.stable; [
+  environment.systemPackages = [
     hyfetch
   ];
 }
