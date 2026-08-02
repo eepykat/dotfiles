@@ -4,7 +4,7 @@
     useUserPackages = true;
     useGlobalPkgs = true;
     users.${userConfig.user} = {
-      imports = [ inputs.catppuccin.homeManagerModules.catppuccin ];
+      imports = [ inputs.catppuccin.homeModules.catppuccin ];
       home.stateVersion = "24.11";
       
       catppuccin = {

@@ -2,6 +2,7 @@
 { pkgs, userConfig, ... }: {
   catppuccin = {
     enable = true;
+    autoEnable = true;
     flavor = "mocha";
   };
 
