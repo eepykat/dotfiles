@@ -2,7 +2,6 @@
 { config, lib, ... }:
 lib.mkIf config.apps.games.enable {
   homebrew.masApps = {
-    "Webkinz Classic Mobile" = 680610650;
     "Webkinz Next" = 1455137730;
   };
 

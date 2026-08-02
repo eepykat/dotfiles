@@ -3,5 +3,6 @@
     git
     hyfetch
     btop
+    mas
   ];
 }
