@@ -6,5 +6,8 @@ lib.mkIf config.apps.games.enable {
 
   homebrew.casks = [
     "prismlauncher"
+    "pokemmo"
+    "pokemon-tcg-live"
+    "steam"
   ];
 }
