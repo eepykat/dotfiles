@@ -8,7 +8,7 @@ lib.mkIf config.apps.games.enable {
 
   homebrew.casks = [
     "prismlauncher"
-    "pokemmo"
+    #"pokemmo" 
     "pokemon-tcg-live"
     "steam"
     "webkinz"
