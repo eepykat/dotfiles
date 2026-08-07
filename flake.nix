@@ -92,6 +92,26 @@
           ];
         };
 #    =======================
+#         Deployment
+#    =======================
+        "deployment" = inputs.nixpkgs.lib.nixosSystem {
+          system = "x86_64-linux";
+          specialArgs = { inherit inputs mainUser; };
+          modules = [
+            inputs.home-manager.nixosModules.home-manager
+            ./hosts/deployment
+            {
+              nixpkgs.overlays = [ ];
+              nixpkgs.config.permittedInsecurePackages = [ ];} 
+              {
+                home-manager.useGlobalPkgs = false;
+                home-manager.useUserPackages = false;
+                home-manager.extraSpecialArgs = { inherit inputs mainUser; };
+
+              }
+          ];
+        };
+#    =======================
 #       Server for later
 #    =======================
         "generic-server" = inputs.nixpkgs.lib.nixosSystem {
