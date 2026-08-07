@@ -12,5 +12,6 @@
     just
     pwgen
     python3
+    zip
   ];
 }
