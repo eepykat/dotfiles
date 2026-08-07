@@ -7,5 +7,10 @@
     usbutils
     pciutils
     rsync
+    git
+    ansible
+    just
+    pwgen
+    python3
   ];
 }
