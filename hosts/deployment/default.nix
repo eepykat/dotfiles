@@ -38,7 +38,7 @@
   };
 
 
-  system.garbage.enable = true;
+  # system.garbage.enable = true;
   nix.gc = {
     automatic = true;
     dates = "daily";
