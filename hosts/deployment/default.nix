@@ -2,7 +2,9 @@
 { config, pkgs, lib, mainUser, inputs, ... }:
 {
   imports = [
+    ./hardware-configuration.nix
     ../../modules/global
+    ../../modules/desktop
   ];
 
   system.stateVersion = "25.11";
