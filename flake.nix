@@ -1,7 +1,6 @@
 # flake.nix
 {
   description = "meowOS v1";
-
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     nix-darwin.url = "github:nix-darwin/nix-darwin/master";
