@@ -2,7 +2,6 @@
 { config, pkgs, lib, mainUser, inputs, ... }:
 {
   imports = [
-    ./disko.nix 
     ../../modules/global
   ];
 
@@ -31,6 +30,12 @@
       PermitRootLogin = "prohibit-password"; 
     };
   };
+  users.users.${mainUser.user} = {
+    openssh.authorizedKeys.keys = [
+      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL+CWDsp+9sR0jji7s59f21wAH2G79FzrTYAmRDs8X09 katmini"
+    ];
+  };
+
 
   system.garbage.enable = true;
   nix.gc = {
