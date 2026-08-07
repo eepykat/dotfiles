@@ -13,5 +13,6 @@
     pwgen
     python3
     zip
+    unzip
   ];
 }
