@@ -44,9 +44,6 @@
     options = "--delete-older-than 7d";
   };
   vpn.enable = lib.mkDefault false;
-  laptop-power.enable = lib.mkDefault false;
-  cellular.enable = lib.mkDefault false;
-  system.audio.enable = lib.mkDefault false;
 
   home-manager.users.${mainUser.user} = { config, lib, pkgs, ... }: {
     imports = [ ../../modules/home ];
