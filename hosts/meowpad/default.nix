@@ -16,7 +16,7 @@
   podman.enable = false;
   flatpak.enable = true;
   default-users.enable = true;
-  vpn.enable = true;
+  vpn.enable = false;
   desktop-networking.enable = true;
   system.audio.enable = true;
   nix-extra-misc.enable = true;
