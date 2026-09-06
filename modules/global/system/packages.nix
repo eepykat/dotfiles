@@ -14,5 +14,6 @@
     python3
     zip
     unzip
+    sl
   ];
 }

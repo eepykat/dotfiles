@@ -13,7 +13,7 @@
   i18n.defaultLocale = "en_US.UTF-8";
 
   # Toggles
-  podman.enable = false;
+  podman.enable = true;
   flatpak.enable = true;
   default-users.enable = true;
   vpn.enable = false;
