@@ -6,7 +6,7 @@
     nix-darwin.url = "github:nix-darwin/nix-darwin/master";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
     nix-homebrew.url = "github:zhaofengli/nix-homebrew";
-    niri.url = "github:sodiboo/niri-flake";
+    niri.url = "github:epireyn/niri-flake";
     home-manager.url = "github:nix-community/home-manager";
     catppuccin.url = "github:catppuccin/nix";
     flatpak.url = "github:gmodena/nix-flatpak/latest";

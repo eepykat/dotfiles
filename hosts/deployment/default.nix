@@ -34,6 +34,7 @@
   users.users.${mainUser.user} = {
     openssh.authorizedKeys.keys = [
       "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL+CWDsp+9sR0jji7s59f21wAH2G79FzrTYAmRDs8X09 katmini"
+      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDC5aEWP44sxCeRDAjdh/bTaAfnfHkzkXO/J35L22T75 meowpad"
     ];
   };
 
