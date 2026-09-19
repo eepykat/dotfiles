@@ -2,9 +2,12 @@
 {
     environment.systemPackages = with pkgs; [
         vesktop # Discord sob
-        fractal
-        mumble
         bluebubbles # iMessage xd
+        mumble
+# Matrix Clients 
+        fractal
+        cinny-desktop
+
     ];
     services.flatpak.packages = [
 #        "org.telegram.desktop" 
