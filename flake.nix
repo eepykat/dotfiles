@@ -40,7 +40,7 @@
     name = "Katarina";
   };
   macUser = {
-    user = "catbook"; # ${macUser.user}
+    user = "kat5";  # ${macUser.user}
     name = "Katarina";
   };
   macMiniUser = {

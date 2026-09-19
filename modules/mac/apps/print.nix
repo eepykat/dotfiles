@@ -4,6 +4,7 @@ lib.mkIf config.apps.print.enable {
   homebrew.casks = [
     "orcaslicer"
     "prusaslicer"
+    
     #"blender"
   ];
 }
