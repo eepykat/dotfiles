@@ -11,7 +11,6 @@
 
   config = lib.mkIf config.terminal.enable {
     catppuccin.autoEnable = true;
-    catppuccin.enable = true;
     catppuccin.starship.enable = true;
     catppuccin.starship.flavor = "mocha";
 
