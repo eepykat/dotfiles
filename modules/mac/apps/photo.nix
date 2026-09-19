@@ -9,6 +9,6 @@ lib.mkIf config.apps.photo.enable {
   };
 
   homebrew.casks = [
-    affinity # New Version ;w;
+    "affinity" # New Version ;w;
   ];
 }
