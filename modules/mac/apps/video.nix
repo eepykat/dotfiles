@@ -14,6 +14,6 @@ lib.mkIf config.apps.video.enable {
 
   homebrew.casks = [
     "handbrake-app"
-    #"obs"
+    "obs"
   ];
 }

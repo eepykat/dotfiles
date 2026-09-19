@@ -6,7 +6,7 @@ lib.mkIf config.apps.browsers.enable {
     "Shut Up" = 1015043880;
   };
   homebrew.casks = [
-    #"firefox"
+    "firefox"
     "ungoogled-chromium"
     "zen"
   ];
