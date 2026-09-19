@@ -18,7 +18,7 @@
   };
 
   services.gvfs.enable = true;
-  services.dbus.packages = [ pkgs.nautilus pkgs.gcr ];
+  services.dbus.packages = [ pkgs.nautilus ];
 
   services.xserver.xkb = {
     layout = "us";
