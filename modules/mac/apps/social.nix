@@ -1,5 +1,5 @@
 # modules/mac/apps/social.nix
-{ config, lib, ... }:
+{ config, lib, pkgs, ... }:
 lib.mkIf config.apps.social.enable {
   homebrew.masApps = {
     "Telegram" = 747648890;
