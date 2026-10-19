@@ -5,4 +5,7 @@
     btop
     mas
   ];
+  homebrew.brews = [
+      "openssh"
+    ];
 }
