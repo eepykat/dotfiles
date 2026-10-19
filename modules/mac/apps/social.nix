@@ -10,6 +10,7 @@ lib.mkIf config.apps.social.enable {
 
   ];
 
+
   homebrew.casks = [
     "element"
     "vesktop"
