@@ -3,6 +3,6 @@
 {
     environment.systemPackages = with pkgs; [
         localsend
-        syncthing
+        seafile-client
     ];
 }

@@ -5,11 +5,11 @@
     ../../modules/global
     ../../modules/desktop
   ];
+  # Bunch of fill ins
   system.stateVersion = "25.11";
   nixpkgs.config.allowUnfree = true;
   networking.hostName = "meowpad";
-
-  time.timeZone = "Europe/Vilnius"; # Lithuanian Time
+  time.timeZone = "Europe/Vilnius";
   i18n.defaultLocale = "en_US.UTF-8";
 
   # Toggles
@@ -29,12 +29,9 @@
     imports = [
       ../../modules/home
     ];
-
     desktop.enable = true;
-
     terminal.enable = true;
     programs.custom-niri.enable = true;
     programs.custom-noctalia.enable = true;
-  
   };
 }

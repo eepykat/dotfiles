@@ -22,6 +22,5 @@
         pam_u2f
         yubikey-manager
         sass
-        seafile-client
     ];
 }

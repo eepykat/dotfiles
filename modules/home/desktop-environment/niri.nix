@@ -16,7 +16,7 @@
       enable = true;
       settings = {
         spawn-at-startup = [
-          { command = [ "noctalia-shell" ]; }
+          { command = [ "noctalia" ]; }
           { command = [ "dbus-update-activation-environment" "--systemd" "DISPLAY" "WAYLAND_DISPLAY" "XAUTHORITY" ]; }
         ];
         layout = {
