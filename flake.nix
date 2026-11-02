@@ -11,6 +11,7 @@
     catppuccin.url = "github:catppuccin/nix";
     flatpak.url = "github:gmodena/nix-flatpak/latest";
     millennium.url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
+    umbriel.url = "github:noctalia-dev/umbriel";
     zen-browser = {
       url = "github:youwen5/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";

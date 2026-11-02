@@ -1,0 +1,278 @@
+[audio]
+enable_overdrive = true
+
+[backdrop]
+blur_intensity = 0.099999997764825821
+tint_intensity = 0.45999998971819878
+
+[bar.default]
+capsule = true
+end = [
+    "control-center",
+    "screenshot",
+    "media",
+    "notifications",
+    "clipboard",
+    "network",
+    "volume",
+    "notes",
+    "bar",
+    "launcher"
+]
+padding = 15
+radius = 80
+start = [ "session", "workspaces", "cat" ]
+thickness = 32
+
+[battery]
+warning_threshold = 25
+
+[calendar]
+enabled = true
+
+[dock]
+enabled = true
+icon_size = 42
+launcher_custom_image_colorize = true
+launcher_position = "start"
+radius = 80
+reserve_space = false
+show_dots = true
+smart_auto_hide = true
+
+[location]
+auto_locate = true
+
+[lockscreen]
+fingerprint = false
+
+[lockscreen_widgets]
+enabled = true
+schema_version = 2
+widget_order = [
+    "lockscreen-login-box@eDP-1",
+    "lockscreen-login-box@DP-3",
+    "lockscreen-widget-0000000000000001",
+    "lockscreen-widget-0000000000000002",
+    "lockscreen-widget-0000000000000004",
+    "lockscreen-widget-0000000000000005"
+]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-3"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 898.0
+    output = "DP-3"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-3".settings]
+        background_color = "surface_container"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 768.0
+    cy = 682.0
+    output = "eDP-1"
+    placement_height = 864.0
+    placement_width = 1536.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+        background_color = "surface_container"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+    box_height = 208.0
+    box_width = 400.0
+    cx = 960.0
+    cy = 236.0
+    output = "DP-3"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "clock"
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000002]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 960.0
+    cy = 540.0
+    output = "DP-3"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "fancy_audio_visualizer"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000002.settings]
+        background = false
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000004]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 140.0
+    cy = 76.0
+    output = "DP-3"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "weather"
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000005]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 1731.0
+    cy = 92.0
+    output = "DP-3"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "media_player"
+
+[nightlight]
+temperature_day = 7000
+
+[notification]
+position = "top_center"
+
+[plugins]
+auto_update = "official"
+enabled = [
+    "noctalia/bongocat",
+    "noctalia/world_clock",
+    "noctalia/translator",
+    "noctalia/timer",
+    "noctalia/umbriel-companion",
+    "noctalia/wallhaven",
+    "noctalia/notes"
+]
+
+[shell]
+avatar_path = "/home/kat5/.config/dotfiles/hosts/meowpad/assets/profile-pic.jpg"
+corner_radius_scale = 2.0
+external_ip_enabled = true
+font_family = "FreeSans"
+lang = "en-GB"
+password_style = "random"
+polkit_agent = true
+screen_time_enabled = true
+show_close_buttons = false
+
+    [shell.launcher]
+    auto_paste = "off"
+
+    [shell.screen_corners]
+    enabled = true
+    size = 100
+
+    [shell.screenshot]
+    directory = "/home/kat5/Pictures/Screenshots"
+    format = "jpeg"
+
+[theme]
+builtin = "Catppuccin"
+community_palette = "Catppuccin Frappe Lavender"
+mode = "dark"
+shell_mode = "dark"
+source = "builtin"
+wallpaper_scheme = "m3-content"
+
+[wallpaper]
+directory = "/home/kat5/Pictures/Wallpapers"
+enabled = true
+per_monitor_directories = true
+
+    [wallpaper.automation]
+    enabled = true
+    recursive = true
+
+    [wallpaper.default]
+    path = "/path/to/wallpapers/wallpaper.png"
+
+    [wallpaper.last]
+    path = "/home/kat5/Pictures/Wallpapers/wallhaven_486go2.jpg"
+
+    [wallpaper.monitors.DP-3]
+    path = "/home/kat5/Pictures/Wallpapers/wallhaven_486go2.jpg"
+
+    [wallpaper.monitors.eDP-1]
+    path = "/home/kat5/Pictures/Wallpapers/wallhaven_486go2.jpg"
+
+[widget.bar]
+type = "noctalia/world_clock:bar"
+
+[widget.cat]
+audio_spectrum = true
+scale = 2.1000000000000001
+tappy_mode = true
+type = "noctalia/bongocat:cat"
+use_mpris_filter = true
+
+[widget.clock]
+anchor = true
+capsule = false
+scale = 1.25
+
+[widget.control-center]
+capsule = true
+capsule_border_width = 0.0
+capsule_padding = 15
+capsule_radius = 80
+glyph = "person"
+show_tooltip = true
+
+[widget.media]
+album_art_only = true
+art_size = 20
+hide_when_idle = true
+hide_when_no_media = true
+rotate_album_art = true
+show_tooltip = true
+
+[widget.network]
+show_label = false
+show_vpn_label = true
+vpn_status = "both"
+
+[widget.notes]
+type = "noctalia/notes:notes"
+
+[widget.volume]
+show_label = false

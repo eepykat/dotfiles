@@ -13,18 +13,12 @@
     programs.noctalia = {
       enable = true;
 
-      settings = { # This may also be a string or path to a .toml file.
-        theme = {
-          mode = "dark";
-          source = "builtin";
-          builtin = "Catppuccin";
-        };
+      settings = "./noctalia-config.toml"
 
         wallpaper = {
           enabled = true;
-          default.path = "/path/to/wallpapers/wallpaper.png";
+          default.path = "/home/kat5/Pictures/Wallpapers";
         };
-      };
     };
   };
 }

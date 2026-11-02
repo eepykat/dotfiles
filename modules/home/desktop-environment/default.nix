@@ -1,7 +1,7 @@
 # /modules/home/desktop-environment/default.nix
 { ... }: {
   imports = [
-    ./niri.nix
+#    ./niri.nix
     ./noctalia.nix
   ];
 }
