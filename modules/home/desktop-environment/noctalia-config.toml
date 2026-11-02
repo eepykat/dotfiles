@@ -7,6 +7,7 @@ tint_intensity = 0.45999998971819878
 
 [bar.default]
 capsule = true
+center = [ "clock", "wallhaven" ]
 end = [
     "control-center",
     "screenshot",
@@ -224,16 +225,16 @@ per_monitor_directories = true
     recursive = true
 
     [wallpaper.default]
-    path = "/path/to/wallpapers/wallpaper.png"
+    path = "/home/kat5/Pictures/Wallpapers/wallhaven-9dykkx.jpg"
 
     [wallpaper.last]
-    path = "/home/kat5/Pictures/Wallpapers/wallhaven_486go2.jpg"
+    path = "/home/kat5/Pictures/Wallpapers/wallhaven-7jexqo.png"
 
     [wallpaper.monitors.DP-3]
-    path = "/home/kat5/Pictures/Wallpapers/wallhaven_486go2.jpg"
+    path = "/home/kat5/Pictures/Wallpapers/wallhaven-7jexqo.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/kat5/Pictures/Wallpapers/wallhaven_486go2.jpg"
+    path = "/home/kat5/Pictures/Wallpapers/wallhaven-j81wxw.png"
 
 [widget.bar]
 type = "noctalia/world_clock:bar"
@@ -276,3 +277,6 @@ type = "noctalia/notes:notes"
 
 [widget.volume]
 show_label = false
+
+[widget.wallhaven]
+type = "noctalia/wallhaven:wallhaven"
