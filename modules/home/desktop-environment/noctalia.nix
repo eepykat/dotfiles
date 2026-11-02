@@ -11,7 +11,7 @@
   config = lib.mkIf (config.desktop.enable && config.programs.custom-noctalia.enable) {
     programs.noctalia = {
       enable = true;
-      settings = "./noctalia-config.toml";
+      settings = builtins.fromTOML (builtins.readFile ./noctalia-config.toml);
     };
   };
 }

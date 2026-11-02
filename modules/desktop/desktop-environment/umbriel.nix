@@ -2,5 +2,7 @@
 {
   imports = [ inputs.umbriel.nixosModules.default ];
 
-  programs.umbriel.enable = true;
+  programs.umbriel = {
+    enable = true;
+  };
 }
