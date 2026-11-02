@@ -8,17 +8,10 @@
     enable = lib.mkEnableOption "Noctalia";
   };
 
-  
   config = lib.mkIf (config.desktop.enable && config.programs.custom-noctalia.enable) {
     programs.noctalia = {
       enable = true;
-
-      settings = "./noctalia-config.toml"
-
-        wallpaper = {
-          enabled = true;
-          default.path = "/home/kat5/Pictures/Wallpapers";
-        };
+      settings = "./noctalia-config.toml";
     };
   };
 }

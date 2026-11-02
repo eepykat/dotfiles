@@ -60,7 +60,7 @@
     desktop.enable = true;
 
     terminal.enable = true;
-    programs.custom-niri.enable = true;
+    #programs.custom-niri.enable = true;
     programs.custom-noctalia.enable = true;
   
   };
