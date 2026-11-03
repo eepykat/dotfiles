@@ -4,7 +4,7 @@
   services.accounts-daemon.enable = true;
   services.displayManager.noctalia-greeter = {
     enable = true;
-    passwordless-sync-users = [ "kat5" ];
+    passwordlessSyncUsers = [ "kat5" ];
 
     cursorTheme = {
       package = pkgs.bibata-cursors;
