@@ -2,7 +2,6 @@
 { config, lib, pkgs, modulesPath, inputs, ... }:
 {
     environment.systemPackages = with pkgs; [
-        niri
         nautilus
         polkit_gnome
         gnome-keyring
