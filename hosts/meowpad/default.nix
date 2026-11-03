@@ -54,7 +54,6 @@
       desktop.enable = true;
       terminal.enable = true;
       programs.custom-noctalia.enable = true;
-      cursor.enable = true;
     };
   };
 }
