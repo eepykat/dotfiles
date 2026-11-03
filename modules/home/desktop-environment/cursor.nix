@@ -1,8 +1,9 @@
 # modules/home/desktop-environment/cursor.nix
 { config, inputs, lib, pkgs, ... }: {
   home.pointerCursor = {
+    enable = true;
     name = "Nordic-cursors";
-      package = pkgs.nordic-cursors;
+      package = pkgs.nordic;
       size = 24;
       gtk.enable = true;
       x11.enable = true;
