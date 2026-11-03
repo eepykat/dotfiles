@@ -10,6 +10,39 @@
       general = {
         autostart = [ "noctalia" ];
       };
+      keybinds = {
+        "Mod+Q" = "window-close";
+        "Mod+T" = "spawn kitty";
+        "Mod+Escape" = "session-quit";
+        "Mod+Left" = "window-focus-left";
+        "Mod+Right" = "window-focus-right";
+        "Mod+I" = "overview-toggle";
+        "Mod+Space" = "spawn noctalia msg panel-toggle launcher";
+        "Mod+L" = "spawn noctalia msg session lock";
+
+
+        "Mod+Shift+Right" = "window-modify-width-right 0.05";
+        "Mod+Shift+Left"  = "window-modify-width-right -0.05";
+        # Workspaces
+        "Mod+1" = "workspace-switch 1";
+        "Mod+2" = "workspace-switch 2";
+        "Mod+3" = "workspace-switch 3";
+        "Mod+4" = "workspace-switch 4";
+        "Mod+5" = "workspace-switch 5";
+        "Mod+6" = "workspace-switch 6";
+        "Mod+7" = "workspace-switch 7";
+        "Mod+8" = "workspace-switch 8";
+        "Mod+9" = "workspace-switch 9";
+        "Mod+Shift+1" = "window-move-to-workspace 1";
+        "Mod+Shift+2" = "window-move-to-workspace 2";
+        "Mod+Shift+3" = "window-move-to-workspace 3";
+        "Mod+Shift+4" = "window-move-to-workspace 4";
+        "Mod+Shift+5" = "window-move-to-workspace 5";
+        "Mod+Shift+6" = "window-move-to-workspace 6";
+        "Mod+Shift+7" = "window-move-to-workspace 7";
+        "Mod+Shift+8" = "window-move-to-workspace 8";
+        "Mod+Shift+9" = "window-move-to-workspace 9";
+      };
     };
   };
 }

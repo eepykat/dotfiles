@@ -1,10 +1,11 @@
-{ config, pkgs, lib, mainUser, inputs, ... }:
-{
+{ config, pkgs, lib, mainUser, inputs, ... }: {
+
   imports = [
     ./hardware-configuration.nix
     ../../modules/global
     ../../modules/desktop
   ];
+  
   # Bunch of fill ins
   system.stateVersion = "25.11";
   nixpkgs.config.allowUnfree = true;
@@ -12,6 +13,8 @@
   time.timeZone = "Europe/Vilnius";
   i18n.defaultLocale = "en_US.UTF-8";
 
+  users.users.${mainUser.user}.shell = pkgs.fish;
+  
   # Toggles
   podman.enable = true;
   flatpak.enable = true;
@@ -25,13 +28,16 @@
   cellular.enable = true;
   steam.enable = false;
 
-  home-manager.users.${mainUser.user} = { config, lib, pkgs, inputs, ... }: {
-    imports = [
-      ../../modules/home
-    ];
-    desktop.enable = true;
-    terminal.enable = true;
-    #programs.custom-niri.enable = true;
-    programs.custom-noctalia.enable = true;
+  home-manager = {
+    extraSpecialArgs = { inherit inputs mainUser; };
+
+    users.${mainUser.user} = { config, lib, pkgs, ... }: {
+      imports = [
+        ../../modules/home
+      ];
+      desktop.enable = true;
+      terminal.enable = true;
+      programs.custom-noctalia.enable = true;
+    };
   };
 }

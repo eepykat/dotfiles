@@ -10,6 +10,7 @@
   };
 
   config = lib.mkIf config.terminal.enable {
+    catppuccin.enable = true;
     catppuccin.autoEnable = true;
     catppuccin.starship.enable = true;
     catppuccin.starship.flavor = "mocha";
@@ -20,29 +21,25 @@
         name = "JetBrainsMono Nerd Font";
         size = 11;
       };
+      settings = {
+        window_padding_width = 6;
+        enable_audio_bell = false;
+      };
     };
 
     programs.fish = {
       enable = true;
-      interactiveShellInit = ''
-        starship init fish | source
-      '';
     };
 
     programs.starship = {
       enable = true;
       enableFishIntegration = true;
-      settings = (lib.importTOML ./terminal/catppuccin-powerline.toml) // {
+        settings = lib.mkForce ((lib.importTOML ./terminal/catppuccin-powerline.toml) // {
         palette = "catppuccin_mocha";
         command_timeout = 1300;
         scan_timeout = 50;
         add_newline = true;
-        format = "$all$nix_shell$nodejs$lua$golang$rust$php$git_branch$git_commit$git_state$git_status\n$username$hostname$directory";
-        character = {
-          success_symbol = "[](bold green) ";
-          error_symbol = "[✗](bold red) ";
-        };
-      };
+      });
     };
   };
 }
