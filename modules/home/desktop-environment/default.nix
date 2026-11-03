@@ -4,5 +4,6 @@
 #    ./niri.nix
     ./noctalia.nix
     ./umbriel.nix
+    ./cursor.nix
   ];
 }

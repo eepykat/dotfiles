@@ -13,8 +13,23 @@
   time.timeZone = "Europe/Vilnius";
   i18n.defaultLocale = "en_US.UTF-8";
 
-  users.users.${mainUser.user}.shell = pkgs.fish;
-  
+  i18n.extraLocaleSettings = {
+    LC_ADDRESS = "en_IE.UTF-8";
+    LC_IDENTIFICATION = "en_IE.UTF-8";
+    LC_MEASUREMENT = "en_IE.UTF-8";
+    LC_MONETARY = "en_IE.UTF-8";
+    LC_NAME = "en_IE.UTF-8";
+    LC_NUMERIC = "en_IE.UTF-8";
+    LC_PAPER = "en_IE.UTF-8";
+    LC_TELEPHONE = "en_IE.UTF-8";
+    LC_TIME = "en_DK.UTF-8";
+  };
+
+  users.users.${mainUser.user} = {
+    shell = pkgs.fish;
+    ignoreShellProgramCheck = true; 
+  };
+
   # Toggles
   podman.enable = true;
   flatpak.enable = true;
@@ -32,12 +47,14 @@
     extraSpecialArgs = { inherit inputs mainUser; };
 
     users.${mainUser.user} = { config, lib, pkgs, ... }: {
+
       imports = [
         ../../modules/home
       ];
       desktop.enable = true;
       terminal.enable = true;
       programs.custom-noctalia.enable = true;
+      cursor.enable = true;
     };
   };
 }
