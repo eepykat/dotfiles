@@ -5,6 +5,7 @@
         mumble
         # Matrix Clients
         cinny-desktop
+        element-desktop
     ];
     services.flatpak.packages = [
 
