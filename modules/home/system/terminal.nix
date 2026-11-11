@@ -10,10 +10,6 @@
   };
 
   config = lib.mkIf config.terminal.enable {
-    catppuccin.enable = true;
-    catppuccin.autoEnable = true;
-    catppuccin.starship.enable = true;
-    catppuccin.starship.flavor = "mocha";
 
     programs.fish = {
       enable = true;

@@ -7,6 +7,12 @@
   };
 
   config = lib.mkIf config.kitty.enable {
+
+    catppuccin.enable = true;
+    catppuccin.autoEnable = true;
+    catppuccin.starship.enable = true;
+    catppuccin.starship.flavor = "mocha";
+
     programs.kitty = {
       enable = true;
       font = {
