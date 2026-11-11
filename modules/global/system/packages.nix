@@ -19,5 +19,7 @@
     sl
     sass
     nodejs
+    nix-index
+    nh
   ];
 }
