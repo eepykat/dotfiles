@@ -13,7 +13,7 @@
 
     programs.fish = {
       enable = true;
-      shellAliases = lib.mkIf config.kitty.enable {
+      shellAliases = lib.mkIf (config.kitty.enable && (builtins.getEnv "TERM" == "xterm-kitty")) {
         ssh = "kitty +kitten ssh";
       };
       interactiveShellInit = ''
