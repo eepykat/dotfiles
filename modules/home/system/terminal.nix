@@ -13,7 +13,7 @@
 
     programs.fish = {
       enable = true;
-      shellAliases = {
+      shellAliases = lib.mkIf config.kitty.enable {
         ssh = "kitty +kitten ssh";
       };
       interactiveShellInit = ''
