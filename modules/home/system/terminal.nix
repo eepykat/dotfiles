@@ -13,9 +13,14 @@
 
     programs.fish = {
       enable = true;
-      shellAliases = lib.mkIf (config.kitty.enable && (builtins.getEnv "TERM" == "xterm-kitty")) {
-        ssh = "kitty +kitten ssh";
-      };
+      shellAliases = { };
+
+      interactiveShellInit = ''
+        ${lib.optionalString config.kitty.enable ''
+          if test "$TERM" = "xterm-kitty"
+              alias ssh="kitty +kitten ssh"
+          end
+        ''}
       interactiveShellInit = ''
         set -l blue   (set_color 5bc4f1)
         set -l pink   (set_color ffc0cb)
