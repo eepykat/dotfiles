@@ -48,9 +48,12 @@
       imports = [
         ../../modules/home
       ];
+      # Home Manager Toggles
       desktop.enable = false;
       terminal.enable = true;
       kitty.enable = false;
+      cursor.enable = false;
+      umbriel.enable = false;
       programs.custom-noctalia.enable = false;
     };
   };

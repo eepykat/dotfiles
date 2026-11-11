@@ -27,6 +27,8 @@
       desktop.enable = true;
       terminal.enable = true;
       kitty.enable = true;
+      cursor.enable = true;
+      umbriel.enable = true;
       programs.custom-noctalia.enable = true;
     };
   };
