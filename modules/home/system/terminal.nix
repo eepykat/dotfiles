@@ -21,7 +21,7 @@
               alias ssh="kitty +kitten ssh"
           end
         ''}
-      interactiveShellInit = ''
+
         set -l blue   (set_color 5bc4f1)
         set -l pink   (set_color ffc0cb)
         set -l white  (set_color ffffff)
@@ -44,7 +44,7 @@
     programs.starship = {
       enable = true;
       enableFishIntegration = true;
-        settings = lib.mkForce ((lib.importTOML ./terminal/catppuccin-powerline.toml) // {
+      settings = lib.mkForce ((lib.importTOML ./terminal/catppuccin-powerline.toml) // {
         palette = "catppuccin_mocha";
         command_timeout = 1300;
         scan_timeout = 50;
