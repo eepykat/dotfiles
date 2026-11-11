@@ -37,10 +37,6 @@
   podman.enable = false;
   default-users.enable = true;
   vpn.enable = false;
-  system.audio.enable = false;
-  laptop-power.enable = false;
-  system.garbage.enable = true;
-  steam.enable = false;
 
   nix.settings = {
     experimental-features = [ "nix-command" "flakes" ];
