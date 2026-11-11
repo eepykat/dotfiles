@@ -1,6 +1,8 @@
 { config, pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
+    hyfetch
+    fastfetch
     wget
     curl
     btop
@@ -15,5 +17,7 @@
     zip
     unzip
     sl
+    sass
+    nodejs
   ];
 }

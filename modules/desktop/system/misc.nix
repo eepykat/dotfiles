@@ -1,13 +1,7 @@
 
 
 # ./modules/desktop/system/misc.nix
-
 { inputs, lib, pkgs, config, ... }: {
-
-
-
-
-
   options.nix-extra-misc = {
     enable = lib.mkEnableOption "Nix Extra";
   };

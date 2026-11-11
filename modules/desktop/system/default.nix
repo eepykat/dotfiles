@@ -3,7 +3,6 @@
     ./cellular.nix
     ./flatpak.nix
     ./fonts.nix
-    ./garbage.nix
     ./laptop-power.nix
     ./misc.nix
     ./networking.nix

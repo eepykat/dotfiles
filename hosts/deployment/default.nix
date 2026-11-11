@@ -25,11 +25,6 @@
     LC_TIME = "en_DK.UTF-8";
   };
 
-  users.users.${mainUser.user} = {
-    shell = pkgs.fish;
-    ignoreShellProgramCheck = true; 
-  };
-
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
@@ -50,13 +45,6 @@
       PasswordAuthentication = false;
       PermitRootLogin = "prohibit-password"; 
     };
-  };
-
-  users.users.${mainUser.user} = {
-    openssh.authorizedKeys.keys = [
-      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL+CWDsp+9sR0jji7s59f21wAH2G79FzrTYAmRDs8X09 katmini"
-      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDC5aEWP44sxCeRDAjdh/bTaAfnfHkzkXO/J35L22T75 meowpad"
-    ];
   };
 
   home-manager = {

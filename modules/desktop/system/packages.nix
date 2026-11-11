@@ -3,11 +3,6 @@
 {
     environment.systemPackages = with pkgs; [
         # very important packages
-        hyfetch
-        fastfetch
-        btop
-        wget
-        curl
         jfsutils
         ntfs3g
         exfatprogs
@@ -21,7 +16,5 @@
         xwayland
         pam_u2f
         yubikey-manager
-        sass
-        nodejs
     ];
 }
