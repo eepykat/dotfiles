@@ -1,14 +1,13 @@
 # modules/home/desktop-environment/umbriel.nix
 { config, inputs, lib, pkgs, ... }: {
+    imports = [ 
+      inputs.umbriel.homeModules.default 
+    ];
     options.umbriel = {
     enable = lib.mkEnableOption "umbriel";
   };
 
   config = lib.mkIf config.umbriel.enable {
-    imports = [ 
-      inputs.umbriel.homeModules.default 
-    ];
-
     programs.umbriel = {
       enable = true;
       settings = {
