@@ -30,6 +30,7 @@
       # Home Manager Toggles
       desktop.enable = true;
       terminal.enable = true;
+      kitty.enable = true;
       programs.custom-noctalia.enable = true;
     };
   };

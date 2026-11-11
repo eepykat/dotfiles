@@ -50,6 +50,7 @@
       ];
       desktop.enable = false;
       terminal.enable = true;
+      kitty.enable = false;
       programs.custom-noctalia.enable = false;
     };
   };
