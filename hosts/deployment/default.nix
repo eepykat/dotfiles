@@ -33,11 +33,6 @@
   default-users.enable = true;
   vpn.enable = false;
 
-  nix.settings = {
-    experimental-features = [ "nix-command" "flakes" ];
-    trusted-users = [ "root" "@wheel" ];
-  };
-
   services.openssh = {
     enable = true;
     ports = [ 22 ];

@@ -11,7 +11,6 @@
       enable = true;
       wifi.powersave = false; 
     };
-    networking.firewall.enable = true;
     hardware.bluetooth.enable = false; # Bluetooth is bad for you >:C
   };
 }

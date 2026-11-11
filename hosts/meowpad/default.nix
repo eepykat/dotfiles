@@ -13,9 +13,7 @@
   vpn.enable = false;
   desktop-networking.enable = true;
   system.audio.enable = true;
-  nix-extra-misc.enable = true;
   laptop-power.enable = true;
-  system.garbage.enable = true;
   cellular.enable = true;
   steam.enable = false;
 

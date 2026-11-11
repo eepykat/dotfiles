@@ -6,6 +6,5 @@
     ./users.nix
     ./vpn.nix
     ./terminal.nix
-    ./garbage.nix
   ];
 }

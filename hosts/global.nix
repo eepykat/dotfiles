@@ -17,4 +17,34 @@
         LC_TELEPHONE = "en_IE.UTF-8";
         LC_TIME = "en_DK.UTF-8";
     };
+    nix = {
+        settings = {
+            experimental-features = [ "nix-command" "flakes" ];
+            auto-optimise-store = true;
+            trusted-users = [ "root" "@wheel" ];
+        };
+        gc = {
+            automatic = true;
+            dates = "weekly";
+            options = "--delete-older-than 7d";
+        };
+    };
+
+    # Networking
+    networking.firewall.enable = true;
+    networking.networkmanager.enable = true;
+    services.resolved.enable = true;
+
+    environment = {
+        variables.EDITOR = "vim";
+        shellAliases = {
+        ll = "ls -l";
+        };
+    };
+
+    services.journald.settings = {
+        Journal = {
+        SystemMaxUse = "50M";
+        };
+    };
 }
