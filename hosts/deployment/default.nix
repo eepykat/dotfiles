@@ -4,6 +4,7 @@
   imports = [
     ./hardware-configuration.nix
     ../../modules/global
+    #../../modules/desktop
   ];
 
   system.stateVersion = "25.11";
@@ -42,7 +43,6 @@
   nix-extra-misc.enable = false;
   laptop-power.enable = false;
   system.garbage.enable = true;
-  cellular.enable = false;
   steam.enable = false;
 
   nix.settings = {
