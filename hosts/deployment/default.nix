@@ -35,12 +35,9 @@
 
   # Toggles
   podman.enable = false;
-  flatpak.enable = false;
   default-users.enable = true;
   vpn.enable = false;
-  desktop-networking.enable = false;
   system.audio.enable = false;
-  nix-extra-misc.enable = false;
   laptop-power.enable = false;
   system.garbage.enable = true;
   steam.enable = false;
