@@ -18,7 +18,14 @@
       fsType = "ext4";
     };
 
-  boot.initrd.luks.devices."luks-bdc603b0-5206-4e1f-ab64-98edc2c8de89".device = "/dev/disk/by-uuid/bdc603b0-5206-4e1f-ab64-98edc2c8de89";
+  boot.initrd.luks.devices = {
+    "luks-bdc603b0-5206-4e1f-ab64-98edc2c8de89" = {
+      device = "/dev/disk/by-uuid/bdc603b0-5206-4e1f-ab64-98edc2c8de89";
+    };
+    "luks-735d23df-0709-4a82-9331-5e52aaa88bd8" = {
+      device = "/dev/disk/by-uuid/735d23df-0709-4a82-9331-5e52aaa88bd8";
+    };
+  };
 
   fileSystems."/boot" =
     { device = "/dev/disk/by-uuid/F617-7D5A";
@@ -26,9 +33,7 @@
       options = [ "fmask=0077" "dmask=0077" ];
     };
 
-  swapDevices =
-    [ { device = "/dev/mapper/luks-735d23df-0709-4a82-9331-5e52aaa88bd8"; }
-    ];
+  swapDevices = [ ];
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
 }
