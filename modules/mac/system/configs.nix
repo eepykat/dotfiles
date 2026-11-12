@@ -18,6 +18,7 @@
       NSAutomaticSpellingCorrectionEnabled = false;
       NSNavPanelExpandedStateForSaveMode = true;
       PMPrintingExpandedStateForPrint = true;
+      _HIHideMenuBar = true;
     };
 
     finder = {
