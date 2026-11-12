@@ -5,6 +5,7 @@
   ];
   environment.etc."xdg/kitty/kitty.conf".text = ''
     font_family      JetBrainsMono Nerd Font
+    shell            /run/current-system/sw/bin/fish
     font_size        13.0
     term                     xterm-256color
     window_padding_width     6
