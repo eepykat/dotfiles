@@ -4,6 +4,8 @@
     ./homebrew.nix
     ./home.nix
     ./preferences.nix
+    ./aerospace.nix
+    ./configs.nix
     inputs.catppuccin.darwinModules.catppuccin
   ];
 }

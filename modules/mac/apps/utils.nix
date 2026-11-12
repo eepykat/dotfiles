@@ -7,8 +7,9 @@ lib.mkIf config.apps.utils.enable {
   };
 
   homebrew.casks = [
-    "alfred"
+    #"alfred"
     "seadrive"
     "seafile-client"
+    "raycast"
   ];
 }

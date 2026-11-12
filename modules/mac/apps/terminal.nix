@@ -7,6 +7,6 @@ lib.mkIf config.apps.terminal.enable {
   ];
 
   homebrew.casks = [
-    #"kitty"
+    "kitty"
   ];
 }
