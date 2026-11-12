@@ -91,7 +91,7 @@ in
         color=${base} \
         blur_radius=20 \
         topmost=on \
-        hidden=on
+        hidden=off
 
       sketchybar --default \
         icon.font="JetBrainsMono Nerd Font:Bold:15.0" \
