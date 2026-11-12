@@ -1,7 +1,6 @@
 # modules/mac/system/aerpspace.nix
 { inputs, userConfig, ... }: {
-    
-    services.aerospace = {
+  services.aerospace = {
     enable = true;
     settings = {
       enable-normalization-flatten-containers = true;
@@ -49,6 +48,12 @@
       ];
     };
   };
-
-
+  services.jankyborders = {
+    enable = true;
+    active_color = "0xff7aa2f7";
+    inactive_color = "0xff414868";
+    width = 5.0;
+    style = "round";
+    hidpi = true;
+  };
 }
