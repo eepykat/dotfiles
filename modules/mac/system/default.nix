@@ -8,6 +8,7 @@
     ./configs.nix
     ./kitty.nix
     ./terminal.nix
+    ./sketchybar.nix
     inputs.catppuccin.darwinModules.catppuccin
   ];
 }
