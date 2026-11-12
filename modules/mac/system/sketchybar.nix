@@ -59,7 +59,7 @@ in
         padding_right=10 \
         color=0xcc1a1b26 \
         blur_radius=20 \
-        hidden=on
+        hidden=off
 
       sketchybar --default \
         icon.drawing=off \
