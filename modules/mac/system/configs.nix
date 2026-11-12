@@ -5,6 +5,7 @@
   system.defaults = {
 
     NSGlobalDomain = {
+      _HIHideMenuBar = true;
       AppleInterfaceStyle = "Dark";
       AppleShowAllExtensions = true;
       AppleShowScrollBars = "WhenScrolling";
@@ -18,7 +19,7 @@
       NSAutomaticSpellingCorrectionEnabled = false;
       NSNavPanelExpandedStateForSaveMode = true;
       PMPrintingExpandedStateForPrint = true;
-      _HIHideMenuBar = true;
+      
     };
 
     finder = {
