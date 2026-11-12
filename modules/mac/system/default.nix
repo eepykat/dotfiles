@@ -6,6 +6,8 @@
     ./preferences.nix
     ./aerospace.nix
     ./configs.nix
+    ./kitty.nix
+    ./terminal.nix
     inputs.catppuccin.darwinModules.catppuccin
   ];
 }
