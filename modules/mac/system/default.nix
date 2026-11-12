@@ -6,7 +6,6 @@
     ./preferences.nix
     ./aerospace.nix
     ./configs.nix
-    ./sketchybar.nix
     inputs.catppuccin.darwinModules.catppuccin
   ];
 }

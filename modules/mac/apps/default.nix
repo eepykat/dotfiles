@@ -14,7 +14,6 @@
     ./security.nix
     ./social.nix
     ./stickers.nix
-    ./terminal.nix
     ./tools.nix
     ./utils.nix
     ./video.nix
@@ -38,7 +37,6 @@
     security = { enable = lib.mkEnableOption "Security Related"; };
     social = { enable = lib.mkEnableOption "Chat Apps"; };
     stickers = { enable = lib.mkEnableOption "Sticker Making"; };
-    terminal = { enable = lib.mkEnableOption "Terminal"; };
     tools = { enable = lib.mkEnableOption "Tools"; };
     utils = { enable = lib.mkEnableOption "Utilities"; };
     video = { enable = lib.mkEnableOption "Video Editing"; };
@@ -61,7 +59,6 @@
     security.enable = lib.mkDefault config.apps.enable;
     social.enable = lib.mkDefault config.apps.enable;
     stickers.enable = lib.mkDefault config.apps.enable;
-    terminal.enable = lib.mkDefault config.apps.enable;
     tools.enable = lib.mkDefault config.apps.enable;
     utils.enable = lib.mkDefault config.apps.enable;
     video.enable = lib.mkDefault config.apps.enable;
