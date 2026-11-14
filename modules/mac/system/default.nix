@@ -4,11 +4,10 @@
     ./homebrew.nix
     ./home.nix
     ./preferences.nix
-    ./aerospace.nix
+    ./omniwm.nix
     ./configs.nix
     ./kitty.nix
     ./terminal.nix
-    ./sketchybar.nix
     inputs.catppuccin.darwinModules.catppuccin
   ];
 }

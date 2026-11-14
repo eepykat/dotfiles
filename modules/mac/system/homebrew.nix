@@ -24,5 +24,8 @@
       "SableClient/sable"
     ]
     ++ builtins.attrNames config.nix-homebrew.taps;
+    brews = [
+      "openssh"
+    ];
   };
 }

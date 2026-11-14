@@ -268,19 +268,6 @@
     },
     "nixpkgs_5": {
       "locked": {
-        "lastModified": 1793540411,
-        "narHash": "sha256-us2GRWGXbOQpN1blyJGvmdx+g4bv9GoFYq5iiOHRiZ8=",
-        "rev": "0bb2eedc20e4739f29e8045034f2828ad7054f8f",
-        "type": "tarball",
-        "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1106360.0bb2eedc20e4/nixexprs.tar.zst?lastModified=1793540411&rev=0bb2eedc20e4739f29e8045034f2828ad7054f8f"
-      },
-      "original": {
-        "type": "tarball",
-        "url": "https://channels.nixos.org/nixos-unstable/nixexprs.tar.zst"
-      }
-    },
-    "nixpkgs_6": {
-      "locked": {
         "lastModified": 1793876309,
         "narHash": "sha256-Q62pssAT9r01POiSyXW0IPXBWhntiKqMhzlsp3bsl5I=",
         "rev": "f9a75f41be3a74eab55d3a7679d34ad6cc0da977",
@@ -325,32 +312,13 @@
         "nix-homebrew": "nix-homebrew",
         "nixpkgs": "nixpkgs_4",
         "noctalia": "noctalia",
-        "sable": "sable",
         "umbriel": "umbriel",
         "zen-browser": "zen-browser"
       }
     },
-    "sable": {
-      "inputs": {
-        "nixpkgs": "nixpkgs_5"
-      },
-      "locked": {
-        "lastModified": 1794649663,
-        "narHash": "sha256-O+3qvyY3ZR4YidO9Bda+wu+A5lwNVGZhLlwOGbr1O8U=",
-        "ref": "refs/heads/main",
-        "rev": "5d25ce23ff0cd535ea0bc0996c21c94629e8a95b",
-        "revCount": 8130,
-        "type": "git",
-        "url": "https://git.sable.moe/SableClient/sable-next"
-      },
-      "original": {
-        "type": "git",
-        "url": "https://git.sable.moe/SableClient/sable-next"
-      }
-    },
     "umbriel": {
       "inputs": {
-        "nixpkgs": "nixpkgs_6",
+        "nixpkgs": "nixpkgs_5",
         "xdg-desktop-portal-umbriel": "xdg-desktop-portal-umbriel"
       },
       "locked": {
