@@ -14,8 +14,12 @@
     bat
     btop
     sl
+    ansible
+    (python3.withPackages (ps: with ps; [
+      pyyaml
+    ]))
   ];
   homebrew.brews = [
-      "openssh"
-    ];
+    "openssh"
+  ];
 }
