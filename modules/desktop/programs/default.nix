@@ -20,8 +20,6 @@
     ./vpn.nix
   ];
 
-
-
     desktop.programs = {
       enable = lib.mkEnableOption "Desktop Programs";
 
@@ -43,7 +41,6 @@
       virtualization.enable = lib.mkEnableOption "Virtualization & VMs";
       vpn.enable = lib.mkEnableOption "VPN";
     };
-  };
 
   config.desktop.programs = {
     audio.enable = lib.mkDefault config.desktop.programs.enable;
