@@ -5,6 +5,7 @@
   programs.fish.enable = true;
   programs.zsh.enable = true;
 
+
   system.defaults = {
 
     NSGlobalDomain = {

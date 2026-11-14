@@ -10,23 +10,16 @@
     ./steam.nix
   ];
 
-  options = {
-    programs.steam = lib.mkOption {
-      type = lib.types.attrsOf lib.types.anything;
-      default = {};
-    };
+  options.gayming = {
+    enable = lib.mkEnableOption "Gaming Apps & Launchers";
 
-    gayming = {
-      enable = lib.mkEnableOption "Gaming Apps & Launchers";
-
-      blockbench.enable = lib.mkEnableOption "Blockbench";
-      hydra-launcher.enable = lib.mkEnableOption "Hydra Launcher";
-      mac-gayming.enable = lib.mkEnableOption "macOS-Specific Games";
-      pokemmo.enable = lib.mkEnableOption "PokeMMO";
-      prismlauncher.enable = lib.mkEnableOption "Prism Launcher";
-      roblox.enable = lib.mkEnableOption "Roblox";
-      steam.enable = lib.mkEnableOption "Steam";
-    };
+    blockbench.enable = lib.mkEnableOption "Blockbench";
+    hydra-launcher.enable = lib.mkEnableOption "Hydra Launcher";
+    mac-gayming.enable = lib.mkEnableOption "macOS-Specific Games";
+    pokemmo.enable = lib.mkEnableOption "PokeMMO";
+    prismlauncher.enable = lib.mkEnableOption "Prism Launcher";
+    roblox.enable = lib.mkEnableOption "Roblox";
+    steam.enable = lib.mkEnableOption "Steam";
   };
 
   config.gayming = {

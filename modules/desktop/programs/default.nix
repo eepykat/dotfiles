@@ -43,7 +43,6 @@
       desktop.enable = lib.mkEnableOption "Desktop Utilities";
       development.enable = lib.mkEnableOption "Development";
       files.enable = lib.mkEnableOption "File Management";
-      gayming.enable = lib.mkEnableOption "Video Games";
       mail.enable = lib.mkEnableOption "Mail Clients";
       music.enable = lib.mkEnableOption "Music Listening";
       office.enable = lib.mkEnableOption "Office";
@@ -65,7 +64,6 @@
     desktop.enable = lib.mkDefault config.desktop.programs.enable;
     development.enable = lib.mkDefault config.desktop.programs.enable;
     files.enable = lib.mkDefault config.desktop.programs.enable;
-    gayming.enable = lib.mkDefault config.desktop.programs.enable;
     mail.enable = lib.mkDefault config.desktop.programs.enable;
     music.enable = lib.mkDefault config.desktop.programs.enable;
     office.enable = lib.mkDefault config.desktop.programs.enable;
