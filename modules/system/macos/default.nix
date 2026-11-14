@@ -8,4 +8,14 @@
     ./configs.nix
     inputs.catppuccin.darwinModules.catppuccin
   ];
+  options = {
+    programs.steam = lib.mkOption {
+      type = lib.types.attrsOf lib.types.anything;
+      default = {};
+    };
+    services.flatpak.packages = lib.mkOption {
+      type = lib.types.listOf lib.types.anything;
+      default = [];
+    };
+  };
 }
