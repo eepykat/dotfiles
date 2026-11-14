@@ -20,17 +20,7 @@
     ./vpn.nix
   ];
 
-  options = {
-    homebrew = {
-      casks = lib.mkOption {
-        type = lib.types.listOf lib.types.anything;
-        default = [];
-      };
-      masApps = lib.mkOption {
-        type = lib.types.attrsOf lib.types.int;
-        default = {};
-      };
-    };
+
 
     desktop.programs = {
       enable = lib.mkEnableOption "Desktop Programs";
