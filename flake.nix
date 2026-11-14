@@ -31,6 +31,9 @@
       url = "github:homebrew/homebrew-bundle";
       flake = false;
     };
+    sable = {
+      url = "git+https://git.sable.moe/SableClient/sable-next";
+    };
 
   };
   outputs = inputs:

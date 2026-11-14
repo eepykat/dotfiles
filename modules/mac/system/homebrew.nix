@@ -4,7 +4,7 @@
     inherit (userConfig) user;
     enable = true;
     enableRosetta = true;
-    mutableTaps = false;
+    mutableTaps = true;
     autoMigrate = true;
     taps = {
       "homebrew/homebrew-core" = inputs.homebrew-core;
@@ -20,6 +20,9 @@
       autoUpdate = true;
       upgrade = true;
     };
-    taps = builtins.attrNames config.nix-homebrew.taps;
+    taps = [
+      "SableClient/sable"
+    ]
+    ++ builtins.attrNames config.nix-homebrew.taps;
   };
 }
