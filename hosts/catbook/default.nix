@@ -41,6 +41,11 @@
     steam.enable = true;
   };
 
+  system = {
+    stateVersion = 7;
+    primaryUser = mainUser.user;
+  };
+
   users.users.${mainUser.user} = {
     name = mainUser.user;
     home = "/Users/${mainUser.user}";
