@@ -3,9 +3,7 @@
   config = lib.mkIf config.desktop.programs.security.enable (
     lib.mkMerge [
       (lib.mkIf pkgs.stdenv.isLinux {
-        programs.wireshark.enable = true;
         environment.systemPackages = with pkgs; [
-          sniffnet
           bitwarden-desktop
           proton-pass
         ];
