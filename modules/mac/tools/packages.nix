@@ -15,9 +15,10 @@
     btop
     sl
     ansible
-    (python3.withPackages (ps: with ps; [
+    (lib.hiPrio (python3.withPackages (ps: with ps; [
       pyyaml
-    ]))
+      pip
+    ])))
   ];
   homebrew.brews = [
     "openssh"
