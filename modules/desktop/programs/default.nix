@@ -20,7 +20,7 @@
     ./vpn.nix
   ];
 
-    desktop.programs = {
+    options.desktop.programs = {
       enable = lib.mkEnableOption "Desktop Programs";
 
       audio.enable = lib.mkEnableOption "Audio Tools";
