@@ -2,7 +2,5 @@
 { ... }: {
   imports = [
     ./packages.nix
-    ./git.nix
-    ./gpg.nix
   ];
 }
