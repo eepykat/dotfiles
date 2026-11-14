@@ -3,7 +3,7 @@
   imports = [
     ./blockbench.nix
     ./hydra-launcher.nix
-    ./mac-gaming.nix
+    ./mac-gayming.nix
     ./pokemmo.nix
     ./prismlauncher.nix
     ./roblox.nix

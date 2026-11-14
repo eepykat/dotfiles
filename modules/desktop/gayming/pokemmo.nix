@@ -3,7 +3,7 @@
   config = lib.mkIf config.gayming.pokemmo.enable (
     lib.mkMerge [
       (lib.mkIf pkgs.stdenv.isLinux {
-        environment.systemPackages = [ pkgs.stable.pokemmo-installer ];
+        #environment.systemPackages = [ pkgs.pokemmo-installer ];
       })
 
       (lib.mkIf pkgs.stdenv.isDarwin {
