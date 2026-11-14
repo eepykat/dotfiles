@@ -42,7 +42,7 @@
     enable = true;
 
     blockbench.enable = true;
-    mac-gaying.enable = true;
+    mac-gayming.enable = true;
     pokemmo.enable = false;
     prismlauncher.enable = true;
     roblox.enable = false;

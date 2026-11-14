@@ -15,7 +15,7 @@
 
     blockbench.enable = lib.mkEnableOption "Blockbench";
     hydra-launcher.enable = lib.mkEnableOption "Hydra Launcher";
-    mac-gaming.enable = lib.mkEnableOption "macOS-Specific Games";
+    mac-gayming.enable = lib.mkEnableOption "macOS-Specific Games";
     pokemmo.enable = lib.mkEnableOption "PokeMMO";
     prismlauncher.enable = lib.mkEnableOption "Prism Launcher";
     roblox.enable = lib.mkEnableOption "Roblox";
@@ -25,7 +25,7 @@
   config.gayming = {
     blockbench.enable = lib.mkDefault config.gayming.enable;
     hydra-launcher.enable = lib.mkDefault config.gayming.enable;
-    mac-gaming.enable = lib.mkDefault config.gayming.enable;
+    mac-gayming.enable = lib.mkDefault config.gayming.enable;
     pokemmo.enable = lib.mkDefault config.gayming.enable;
     prismlauncher.enable = lib.mkDefault config.gayming.enable;
     roblox.enable = lib.mkDefault config.gayming.enable;
