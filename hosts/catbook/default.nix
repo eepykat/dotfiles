@@ -41,6 +41,12 @@
     steam.enable = true;
   };
 
+  users.users.${mainUser.user} = {
+    name = mainUser.user;
+    home = "/Users/${mainUser.user}";
+  };
+
+
   home-manager = {
     useGlobalPkgs = true;
     useUserPackages = true;

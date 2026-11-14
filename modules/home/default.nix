@@ -1,4 +1,4 @@
-# /modules/home/default.nix
+# modules/home/default.nix
 { config, lib, pkgs, mainUser, ... }: {
   imports = [
     ./system
@@ -16,9 +16,11 @@
   config = {
     home = {
       username = mainUser.user;
-      homeDirectory = "/home/${mainUser.user}";
+      homeDirectory =
+        if pkgs.stdenv.hostPlatform.isDarwin
+        then "/Users/${mainUser.user}"
+        else "/home/${mainUser.user}";
       stateVersion = "24.11";
     };
   };
-
 }
