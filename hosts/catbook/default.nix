@@ -6,14 +6,6 @@
     ../../modules/system/macos
   ];
 
-  # macOS System Toggles
-  mac = {
-    defaults.enable = true;
-    homebrew.enable = true;
-    touchid.enable = true;
-    omniwm.enable = true;
-  };
-
   # Desktop Programs Toggles
   desktop.programs = {
     enable = true;
