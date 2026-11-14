@@ -22,7 +22,7 @@
       upgrade = true;
     };
     taps = [
-      builtins.attrNamess config.nix-homebrew.taps
+      builtins.attrNames config.nix-homebrew.taps
     ]
     ++ builtins.attrNames config.nix-homebrew.taps;
     brews = [
