@@ -1,6 +1,9 @@
 # /modules/mac/system/configs.nix
 { inputs, userConfig, ... }: {
   security.pam.services.sudo_local.touchIdAuth = true;
+  
+  programs.fish.enable = true;
+  programs.zsh.enable = true;
 
   system.defaults = {
 

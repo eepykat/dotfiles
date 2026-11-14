@@ -19,6 +19,7 @@
             "raycast"
             "seadrive"
             "seafile-client"
+            "kitty"
           ];
         };
       })

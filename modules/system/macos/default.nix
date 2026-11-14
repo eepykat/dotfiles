@@ -6,8 +6,6 @@
     ./preferences.nix
     ./omniwm.nix
     ./configs.nix
-    ./kitty.nix
-    ./terminal.nix
     inputs.catppuccin.darwinModules.catppuccin
   ];
 }
