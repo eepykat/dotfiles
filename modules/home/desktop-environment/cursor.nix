@@ -1,17 +1,17 @@
 # modules/home/desktop-environment/cursor.nix
 { config, inputs, lib, pkgs, ... }: {
-    options.cursor = {
+  options.cursor = {
     enable = lib.mkEnableOption "cursor";
   };
 
-  config = lib.mkIf config.cursor.enable {
+  config = lib.mkIf (pkgs.stdenv.isLinux && config.desktop.enable && config.cursor.enable) {
     home.pointerCursor = {
       enable = true;
       name = "Nordic-cursors";
-        package = pkgs.nordic;
-        size = 24;
-        gtk.enable = true;
-        x11.enable = true;
+      package = pkgs.nordic;
+      size = 24;
+      gtk.enable = true;
+      x11.enable = true;
     };
     home.sessionVariables = {
       XCURSOR_THEME = config.home.pointerCursor.name;

@@ -1,12 +1,16 @@
-# ./modules/desktop/gayming/pokemmo.nix
-
+# modules/desktop/gayming/pokemmo.nix
 { inputs, lib, pkgs, config, ... }: {
+  config = lib.mkIf config.gayming.pokemmo.enable (
+    lib.mkMerge [
+      (lib.mkIf pkgs.stdenv.isLinux {
+        environment.systemPackages = [ pkgs.stable.pokemmo-installer ];
+      })
 
-  options.pokemmo = {
-    enable = lib.mkEnableOption "PokeMMO";
-  };
-
-  config = lib.mkIf config.pokemmo.enable {
-    environment.systemPackages = [pkgs.stable.pokemmo-installer];
-  };
+      (lib.mkIf pkgs.stdenv.isDarwin {
+        homebrew.casks = [
+          # "pokemmo"
+        ];
+      })
+    ]
+  );
 }

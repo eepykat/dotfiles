@@ -9,7 +9,7 @@
         ];
       })
 
-      (lib.optionalAttrs pkgs.stdenv.isDarwin {
+      (lib.mkIf pkgs.stdenv.isDarwin {
         homebrew = {
           masApps = {
             "LibreOffice" = 1630474372;

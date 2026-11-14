@@ -8,7 +8,7 @@
         ];
       })
 
-      (lib.optionalAttrs pkgs.stdenv.isDarwin {
+      (lib.mkIf pkgs.stdenv.isDarwin {
         homebrew = {
           masApps = {
             "Canary Mail" = 1236045954;

@@ -1,8 +1,9 @@
-# /modules/home/desktop-environment/default.nix
+# modules/home/desktop-environment/default.nix
 { ... }: {
   imports = [
-    ./noctalia.nix
-    ./umbriel.nix
     ./cursor.nix
+    ./noctalia.nix
+    ./omniwm.nix
+    ./umbriel.nix
   ];
 }

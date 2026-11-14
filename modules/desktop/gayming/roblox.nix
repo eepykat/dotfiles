@@ -1,12 +1,16 @@
-# ./modules/desktop/gayming/roblox.nix
-
+# modules/desktop/gayming/roblox.nix
 { inputs, lib, pkgs, config, ... }: {
+  config = lib.mkIf config.gayming.roblox.enable (
+    lib.mkMerge [
+      (lib.mkIf pkgs.stdenv.isLinux {
+        services.flatpak.packages = [ "org.vinegarhq.Sober" ];
+      })
 
-  options.roblox = {
-    enable = lib.mkEnableOption "Roblox";
-  };
-
-  config = lib.mkIf config.roblox.enable {
-    services.flatpak.packages = ["org.vinegarhq.Sober"];
-  };
+      (lib.mkIf pkgs.stdenv.isDarwin {
+        homebrew.casks = [
+          "roblox"
+        ];
+      })
+    ]
+  );
 }

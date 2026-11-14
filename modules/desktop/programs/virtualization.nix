@@ -7,7 +7,7 @@
         ];
       })
 
-      (lib.optionalAttrs pkgs.stdenv.isDarwin {
+      (lib.mkIf pkgs.stdenv.isDarwin {
         homebrew = {
           masApps = {
             "CrystalFetch" = 6454431289;

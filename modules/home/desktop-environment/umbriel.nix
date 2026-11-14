@@ -1,13 +1,14 @@
 # modules/home/desktop-environment/umbriel.nix
 { config, inputs, lib, pkgs, ... }: {
-    imports = [ 
-      inputs.umbriel.homeModules.default 
-    ];
-    options.umbriel = {
+  imports = [
+    inputs.umbriel.homeModules.default
+  ];
+
+  options.umbriel = {
     enable = lib.mkEnableOption "umbriel";
   };
 
-  config = lib.mkIf config.umbriel.enable {
+  config = lib.mkIf (pkgs.stdenv.isLinux && config.desktop.enable && config.umbriel.enable) {
     programs.umbriel = {
       enable = true;
       settings = {
@@ -24,10 +25,9 @@
           "Mod+Space" = "spawn noctalia msg panel-toggle launcher";
           "Mod+L" = "spawn noctalia msg session lock";
 
-
           "Mod+Shift+Right" = "window-modify-width-right 0.05";
-          "Mod+Shift+Left"  = "window-modify-width-right -0.05";
-          # Workspaces
+          "Mod+Shift+Left" = "window-modify-width-right -0.05";
+
           "Mod+1" = "workspace-switch 1";
           "Mod+2" = "workspace-switch 2";
           "Mod+3" = "workspace-switch 3";

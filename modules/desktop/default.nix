@@ -1,8 +1,7 @@
+# modules/desktop/default.nix
 {...}: {
   imports = [
-    ./desktop-environment
     ./gayming
     ./programs
-    ./system
   ];
 }

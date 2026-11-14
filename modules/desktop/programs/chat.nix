@@ -19,7 +19,7 @@
         ];
       })
 
-      (lib.optionalAttrs pkgs.stdenv.isDarwin {
+      (lib.mkIf pkgs.stdenv.isDarwin {
         homebrew = {
           masApps = {
             "Telegram" = 747648890;

@@ -11,7 +11,7 @@
         ];
       })
 
-      (lib.optionalAttrs pkgs.stdenv.isDarwin {
+      (lib.mkIf pkgs.stdenv.isDarwin {
         homebrew = {
           masApps = {
             "Captionator" = 1627843786;
