@@ -31,6 +31,10 @@
       url = "github:homebrew/homebrew-bundle";
       flake = false;
     };
+    homebrew-sable = {
+      url = "github:SableClient/sable";
+      flake = false;
+    };
   };
   outputs = inputs:
   let

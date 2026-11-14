@@ -10,6 +10,7 @@
       "homebrew/homebrew-core" = inputs.homebrew-core;
       "homebrew/homebrew-cask" = inputs.homebrew-cask;
       "homebrew/homebrew-bundle" = inputs.homebrew-bundle;
+      "sableclient/sable" = inputs.homebrew-sable;
     };
   };
 
@@ -21,7 +22,7 @@
       upgrade = true;
     };
     taps = [
-      "SableClient/sable"
+      builtins.attrNamess config.nix-homebrew.taps;
     ]
     ++ builtins.attrNames config.nix-homebrew.taps;
     brews = [
