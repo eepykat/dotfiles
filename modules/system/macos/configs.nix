@@ -5,6 +5,8 @@
   programs.fish.enable = true;
   programs.zsh.enable = true;
 
+  services.sketchybar.enable = false;
+
 
   system.defaults = {
 
