@@ -1,25 +1,58 @@
-# /hosts/lunchbox/default.nix
+# hosts/meowpad/default.nix
 { config, pkgs, lib, mainUser, inputs, ... }: {
   imports = [
     ./hardware-configuration.nix
-    ../../modules/global
+    ../../modules/system
+    ../../modules/system/linux
     ../../modules/desktop
+    ../../modules/desktop/linux
     ../global.nix
-    ../nvidia.nix
   ];
 
-  networking.hostName = "lunchbox";
-
-  # Toggles
-  podman.enable = true;
+  # System Toggles
+  podman.enable = false;
   flatpak.enable = true;
   default-users.enable = true;
   vpn.enable = false;
   desktop-networking.enable = true;
   system.audio.enable = true;
-  laptop-power.enable = true;
-  cellular.enable = true;
-  steam.enable = false;
+  laptop-power.enable = false;
+  cellular.enable = false;
+
+  # Desktop Programs Toggles
+  desktop.programs = {
+    enable = true;
+
+    audio.enable = true;
+    books.enable = true;
+    browsers.enable = true;
+    chat.enable = true;
+    creative.enable = true;
+    desktop.enable = true;
+    development.enable = true;
+    files.enable = true;
+    mail.enable = false;
+    music.enable = true;
+    office.enable = true;
+    print.enable = true;
+    security.enable = true;
+    system.enable = true;
+    video.enable = true;
+    virtualization.enable = true;
+    vpn.enable = false;
+  };
+
+  # Gaming Toggles
+  gayming = {
+    enable = true;
+
+    steam.enable = true;
+    blockbench.enable = true;
+    hydra-launcher.enable = true;
+    pokemmo.enable = true;
+    prismlauncher.enable = true;
+    roblox.enable = true;
+  };
 
   home-manager = {
     extraSpecialArgs = { inherit inputs mainUser; };
@@ -27,6 +60,7 @@
       imports = [
         ../../modules/home
       ];
+
       # Home Manager Toggles
       desktop.enable = true;
       terminal.enable = true;

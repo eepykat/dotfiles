@@ -56,11 +56,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1794278858,
-        "narHash": "sha256-rkrJwLgLSHBnXfgoSKIDa+2LLGdTqynsV3GAxOTGhUU=",
+        "lastModified": 1794715309,
+        "narHash": "sha256-awkBBs5ctFKgEYjpNGpi3t/VqF589n5EWfdinRb2gNI=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "82ce401aa350502897c3f2e85f384d61cd3b0b6d",
+        "rev": "a1293da7dd8e497e08d26173f97e2976b36a31ea",
         "type": "github"
       },
       "original": {
@@ -88,11 +88,11 @@
     "homebrew-cask": {
       "flake": false,
       "locked": {
-        "lastModified": 1794650121,
-        "narHash": "sha256-uxiYDMNNEhWSc4OocMHPqkL57mo29mdv74lN7xLbXOA=",
+        "lastModified": 1794758922,
+        "narHash": "sha256-s+X5rA/3PVmf1tI7BMYAV0Q5PWbkJHNZxEK3R68hqyg=",
         "owner": "homebrew",
         "repo": "homebrew-cask",
-        "rev": "01b15ffb035727c704d16b3ca961e436486cd62d",
+        "rev": "4026fea067d0f8b99ff2d2e9f8ee9f9730829850",
         "type": "github"
       },
       "original": {
@@ -104,16 +104,32 @@
     "homebrew-core": {
       "flake": false,
       "locked": {
-        "lastModified": 1794648926,
-        "narHash": "sha256-78+Tj7aZjRiMzvLxvDQ90J+eWsfv7QOISCW6DslbNfk=",
+        "lastModified": 1794757304,
+        "narHash": "sha256-hyFi4G1rFnOtrPhYsM5JVn/9qOPRgFuhCQ+eymothEQ=",
         "owner": "homebrew",
         "repo": "homebrew-core",
-        "rev": "43bfcc9b54eeb568071438e38eeab760b8177366",
+        "rev": "0a752f1cebe5c6700d050b7ab5a86a03d26bc0c6",
         "type": "github"
       },
       "original": {
         "owner": "homebrew",
         "repo": "homebrew-core",
+        "type": "github"
+      }
+    },
+    "homebrew-sable": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1792169082,
+        "narHash": "sha256-kDd6cxJtrhRMoAoyPs2OiWDtXi5ycUBUCuKZ0WrzAq0=",
+        "owner": "SableClient",
+        "repo": "sable",
+        "rev": "3adfe1e6cddf9cc724574a6bf58fb7eac041d294",
+        "type": "github"
+      },
+      "original": {
+        "owner": "SableClient",
+        "repo": "sable",
         "type": "github"
       }
     },
@@ -252,11 +268,11 @@
     },
     "nixpkgs_4": {
       "locked": {
-        "lastModified": 1794495034,
-        "narHash": "sha256-E0hYoioqUtM2XmPPvYYpJgdADF5AW9oOoPSEiM9dTHQ=",
+        "lastModified": 1794554816,
+        "narHash": "sha256-PqJ89Z/qwQa2fB2C0j/GjiviARAtBzVPDUxnbIY6EPA=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "2074cc672349f14240fb7ea90d509e0b643e9dd4",
+        "rev": "e126e9e73c335158ff8279ac14d5f4afec153716",
         "type": "github"
       },
       "original": {
@@ -268,11 +284,11 @@
     },
     "nixpkgs_5": {
       "locked": {
-        "lastModified": 1793876309,
-        "narHash": "sha256-Q62pssAT9r01POiSyXW0IPXBWhntiKqMhzlsp3bsl5I=",
-        "rev": "f9a75f41be3a74eab55d3a7679d34ad6cc0da977",
+        "lastModified": 1794386569,
+        "narHash": "sha256-W60urNAgQVS8bhNWH0bQsYoiagds8m38oTDUjEOM9FE=",
+        "rev": "d4f25a3e562008648d45bcf2d70bcc7422cad84e",
         "type": "tarball",
-        "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1108983.f9a75f41be3a/nixexprs.tar.xz"
+        "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1117658.d4f25a3e5620/nixexprs.tar.xz"
       },
       "original": {
         "type": "tarball",
@@ -286,11 +302,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1794626679,
-        "narHash": "sha256-6CcXjs7GWM9C1asbHSAmfM++ut9jM77nHIXz3FM3hHg=",
+        "lastModified": 1794758879,
+        "narHash": "sha256-eU8JL3u7/L0I8unO0to0QthohkMpGJI0/zzs49C477A=",
         "owner": "noctalia-dev",
         "repo": "noctalia",
-        "rev": "4933674079ecf7545cc23cd5f1cd77c3e74f8e09",
+        "rev": "f786797e646bcced89ce1706f133db249bd0e23a",
         "type": "github"
       },
       "original": {
@@ -307,6 +323,7 @@
         "homebrew-bundle": "homebrew-bundle",
         "homebrew-cask": "homebrew-cask",
         "homebrew-core": "homebrew-core",
+        "homebrew-sable": "homebrew-sable",
         "millennium": "millennium",
         "nix-darwin": "nix-darwin",
         "nix-homebrew": "nix-homebrew",
@@ -322,11 +339,11 @@
         "xdg-desktop-portal-umbriel": "xdg-desktop-portal-umbriel"
       },
       "locked": {
-        "lastModified": 1794581480,
-        "narHash": "sha256-TTXrp5JD91NEcMpX4ChH/J/AtP0g8h3L+DCCgfVYt70=",
+        "lastModified": 1794752968,
+        "narHash": "sha256-ATgywA0yC7Eq/gzlD8/kGyqLC27om957sbLuNXdk9Ow=",
         "owner": "noctalia-dev",
         "repo": "umbriel",
-        "rev": "33a782dc750e78f0ef2d21fd9d3df33229ae06f9",
+        "rev": "70b3724f3a192b3f05562f3c28df84564df5fa06",
         "type": "github"
       },
       "original": {
